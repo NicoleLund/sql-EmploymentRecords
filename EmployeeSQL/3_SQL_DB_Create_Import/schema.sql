@@ -6,7 +6,7 @@
 -- and updated to match my style and readability preferences.
 
 ------------------------------------
--- 1. Drop tables that already exist
+-- 0. Drop tables that already exist
 DROP TABLE IF EXISTS departments CASCADE;
 DROP TABLE IF EXISTS titles CASCADE;
 DROP TABLE IF EXISTS employees CASCADE;
@@ -16,21 +16,21 @@ DROP TABLE IF EXISTS salaries CASCADE;
 
 
 ------------------------------------
--- 2. Create departments table
+-- 1. Create and import departments table
 CREATE TABLE departments (
        dept_no varchar(10) PRIMARY KEY,
        dept_name varchar(25) UNIQUE NOT NULL);
 
-
+   
 ------------------------------------
--- 3. Create titles table
+-- 2. Create titles table
 CREATE TABLE titles (
        title_id varchar(10) PRIMARY KEY,
        title varchar(25) UNIQUE NOT NULL);
 
  
 ------------------------------------
--- 4. Create employees table
+-- 3. Create employees table
 CREATE TABLE employees (
        emp_no varchar(10) PRIMARY KEY,
        first_name varchar(25) NOT NULL,
@@ -43,7 +43,7 @@ CREATE TABLE employees (
 
 
 ------------------------------------
--- 5. Create dept_employees table
+-- 4. Create dept_employees table
 -- Note, some employees are assigned to multiple departments.
 -- Composite key required.
 CREATE TABLE dept_employees (
@@ -55,7 +55,7 @@ CREATE TABLE dept_employees (
 
 
 ------------------------------------
--- 6. Create dept_managers table
+-- 5. Create dept_managers table
 CREATE TABLE dept_managers (
        emp_no varchar(10) PRIMARY KEY,
        dept_no varchar(10) NOT NULL,
@@ -64,7 +64,7 @@ CREATE TABLE dept_managers (
 
 
 ------------------------------------
--- 7. Create salaries table
+-- 6. Create salaries table
 CREATE TABLE salaries (
        emp_no varchar(10) PRIMARY KEY,
        salary integer NOT NULL,
