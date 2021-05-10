@@ -1,0 +1,50 @@
+# Data Analytics 09-SQL homework
+# Create Employee Database Model
+
+
+# Identifies a unique name for each department
+departments
+-
+dept_no varchar(10) PK
+dept_name varchar(25) UNIQUE
+
+
+# Identifies the department assignment of employees.
+# Note: Some employees are assigned to multiple departments.
+dept_employees
+-
+emp_no varchar(10) PK FK - employees.emp_no
+dept_no varchar(10) PK FK >-< departments.dept_no
+
+
+# Identifies the department managed by an employee.
+dept_managers
+-
+emp_no varchar(10) PK FK - employees.emp_no
+dept_no varchar(10) FK >- departments.dept_no
+
+
+# Records employee demographics.
+employees
+-
+emp_no varchar(10) PK
+first_name varchar(25)
+last_name varchar(25)
+sex char(1)
+birth_date date
+hire_date date
+emp_title_id varchar(10)
+
+
+# Identifies the salary for employees.
+salaries
+-
+emp_no varchar(10) PK FK - employees.emp_no
+salary integer
+
+
+# Identifies the unique name for each job title.
+titles
+-
+title_id varchar(10) PK FK -< employees.emp_title_id
+title varchar(25) UNIQUE
