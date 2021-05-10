@@ -1,6 +1,6 @@
 # sql-challenge
 
-UofA Data Analytics Bootcamp Homework Assignment 10-SQL
+UofA Data Analytics Bootcamp Homework Assignment 09-SQL
 
 ### Assignment Description
 
