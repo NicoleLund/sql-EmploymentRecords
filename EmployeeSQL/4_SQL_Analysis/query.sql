@@ -153,5 +153,11 @@ SELECT e.emp_no,
        ON e.emp_no = s.emp_no
        INNER JOIN titles AS t 
        ON e.emp_title_id = t.title_id; 
+   
+------------------------------------
+-- Epilogue.
+SELECT *
+  FROM employees AS e 
+ WHERE e.emp_no = '499942';
 
    

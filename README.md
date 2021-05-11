@@ -68,3 +68,10 @@ Use a PostgreSQL database to analyze employment records from the 1980s and 1990s
 
 ![By title](EmployeeSQL/5_Bonus_SQLAlchemy/salary_by_job.png)
 
+# Epilogue Challenge
+
+* Query ID number 499942.
+
+![epilogue](EmployeeSQL/4_SQL_Analysis/epilogue.png)
+
+
