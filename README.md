@@ -20,6 +20,8 @@ Use a PostgreSQL database to analyze employment records from the 1980s and 1990s
     
     * 4_SQL_Analysis contains query.sql which contains the code queries for each of the assignment tasks.
     
+    * 5_Bonus_SQLAlchemy contains a Jupyter Notebook analysis of salaries in the database using SQLAlchemy.
+    
 # Analysis assignments and results
 1. List the following details of each employee: employee number, last name, first name, sex, and salary.
 
@@ -56,3 +58,13 @@ Use a PostgreSQL database to analyze employment records from the 1980s and 1990s
 8. In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.    
 
 ![Query 8](EmployeeSQL/4_SQL_Analysis/query_8.png)
+
+# Bonus SQLAlchemy assignments and results
+1. Create a histogram to visualize the most common salary ranges for employees.
+
+![Histogram](EmployeeSQL/5_Bonus_SQLAlchemy/histogram_salary.png)
+
+3.Create a bar chart of average salary by title.
+
+![By title](EmployeeSQL/5_Bonus_SQLAlchemy/salary_by_job.png)
+

@@ -135,3 +135,23 @@ SELECT e.last_name,
   FROM employees AS e
  GROUP BY e.last_name 
  ORDER BY count_last_name DESC 
+ 
+ 
+------------------------------------
+-- Bonus. 2. Create a histogram to visualize the most common salary ranges for employees.
+SELECT s.salary 
+  FROM salaries AS s 
+  
+------------------------------------
+-- Bonus. 3. Create a bar chart of average salary by title.
+SELECT e.emp_no,
+       s.salary,
+       e.emp_title_id, 
+       t.title
+  FROM employees AS e 
+       INNER JOIN salaries AS s 
+       ON e.emp_no = s.emp_no
+       INNER JOIN titles AS t 
+       ON e.emp_title_id = t.title_id; 
+
+   
