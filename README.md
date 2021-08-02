@@ -1,4 +1,6 @@
-# sql-EmploymentRecords 09-SQL
+# sql-EmploymentRecords 
+
+UofA Data Analytics Bootcamp Homework Assignment 09-SQL
 
 ### Assignment Description
 Use a PostgreSQL database to analyze employment records from the 1980s and 1990s stored in six CSV files.
